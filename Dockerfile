@@ -4,7 +4,7 @@ RUN pip install -r /tmp/requirements.txt
 RUN mkdir /code
 WORKDIR /code
 COPY . /code
-COPY docker-entrypoint.sh docker-entrypoint.sh
+COPY docker-entrypoint.sh /code/docker-entrypoint.sh
 RUN chmod +x docker-entrypoint.sh
 EXPOSE 8000
 
